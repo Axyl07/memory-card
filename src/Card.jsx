@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-export default function Card({ weapon,handleScoreIncrement,handleScoreReset }) {
+export default function Card({ weapon,handleScoreIncrement,handleScoreReset,score,highScore,setHighScore,shuffleFn,weaponsList }) {
 
     const [status, setStatus] = useState(false); 
     function handleClick() {
@@ -9,9 +9,11 @@ export default function Card({ weapon,handleScoreIncrement,handleScoreReset }) {
         if (status == false) {
             setStatus(true);
             handleScoreIncrement();
+            shuffleFn(weaponsList);
         } else {
-            handleScoreReset();
             setStatus(false);
+            setHighScore(Math.max(highScore,score));
+            handleScoreReset();
         }
     }
     return (
