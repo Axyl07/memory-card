@@ -19,10 +19,17 @@ export default function Grid({ weaponsList }) {
 
     return (
         <>
+            <div className="Header">
+                <img src="./src/assets/memory-card.svg" alt="logo" width={'100px'} />
+                <div className="top" >
+                <h1>TEST YOUR MEMORY</h1>
+                In this game, you are tasked with clicking every gun, without ever clicking the same gun twice.
+                </div>
         <div className="scoreboard">
                 Score : {score} <br />
                 High Score : { highScore }
         </div>
+            </div>
         <div className="grid" >
                 {
                     weaponsList.map((weapon) =>
