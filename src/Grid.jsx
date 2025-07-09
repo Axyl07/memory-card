@@ -4,7 +4,7 @@ export default function Grid({ weaponsList }) {
         <div className="grid" >
             { 
                 weaponsList.map((weapon) =>        
-                        <Card key={weapon.id} weapon={weapon} />
+                        <Card key={weapon.id + Math.random()} weapon={weapon} />
                 )
             }
         </div>

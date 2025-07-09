@@ -61,3 +61,19 @@ export let weaponsList = [
     },
 
 ];
+
+
+
+export function shuffle(weaponsList) {
+    weaponsList.sort(()=>Math.random() - 0.5);
+}
+// export function cli(weaponsList) {
+    //     shuffle(weaponsList);
+    //     weaponsList.forEach(element => {
+        //         console.log(element.name + " " +  element.id)
+        //     });
+        // }
+        
+        
+        // cli(weaponsList);
+        
