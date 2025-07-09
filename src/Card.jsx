@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './Card.css';
 
 export default function Card({ weapon,handleScoreIncrement,handleScoreReset,score,highScore,setHighScore,shuffleFn,weaponsList }) {
 
