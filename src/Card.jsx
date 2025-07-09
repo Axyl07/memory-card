@@ -1,25 +1,26 @@
-import { useState } from "react";
+// import { useState } from "react";
 import './Card.css';
 
-export default function Card({ weapon,handleScoreIncrement,handleScoreReset,score,highScore,setHighScore,shuffleFn,weaponsList }) {
+export default function Card({ weapon,handleScoreIncrement,handleScoreReset,score,highScore,setHighScore,shuffleFn,weaponsList,resetStatus }) {
 
-    const [status, setStatus] = useState(false); 
+    const status = weapon.status;
     function handleClick() {
         console.log(weapon.name + " is clicked");
         if (status == false) {
-            setStatus(true);
+            weapon.status = true;
             handleScoreIncrement();
             shuffleFn(weaponsList);
         } else {
-            setStatus(false);
+            weapon.status = false;
             setHighScore(Math.max(highScore,score));
             handleScoreReset();
+            resetStatus(weaponsList);
         }
     }
     return (
         <div onClick={handleClick} className="card">
             <div className="cardImg">
-                <img src={weapon.img} alt={weapon.name} />
+                <img width={'360px'} src={weapon.img} alt={weapon.name} />
             </div>
             <div className="cardname">
                 {weapon.name}

@@ -1,0 +1,13 @@
+.scoreboard{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grid{
+    display: flex;
+    gap: 0.94em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
