@@ -2,6 +2,7 @@ import { useState } from "react";
 import Card from "./Card";
 import { shuffle } from "./data";
 import './Grid.css';
+import logo from "./assets/memory-card.svg"
 
 export default function Grid({ weaponsList }) {
     const [score, setScore] = useState(0);
@@ -20,7 +21,7 @@ export default function Grid({ weaponsList }) {
     return (
         <>
             <div className="Header">
-                <img src="./assets/memory-card.svg" alt="logo" width={'100px'} />
+                <img src={ logo } alt="logo" width={'100px'} />
                 <div className="top" >
                 <h1>TEST YOUR MEMORY</h1>
                 In this game, you are tasked with clicking every gun, without ever clicking the same gun twice.
