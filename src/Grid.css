@@ -27,3 +27,15 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 500px) {
+    .Header{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
