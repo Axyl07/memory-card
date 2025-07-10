@@ -1,12 +1,67 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 🔫 Memorry - Gun Memory Click Game
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Memorry** is a memory-based browser game where your goal is simple:
+**Click every gun exactly once without repeating any selection.**
 
-## Expanding the ESLint configuration
+Each successful click earns you a point — but click a gun you've already chosen, and it’s **game over**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎮 Gameplay Overview
+
+* A set of gun images is displayed on screen.
+* Each time you click a gun:
+
+  * ✅ If you haven’t clicked it before, your score increases.
+  * ❌ If you click a gun you've already clicked, the game resets.
+* After each valid click, the guns **shuffle randomly** to challenge your memory.
+
+---
+
+## 🚀 Live Demo
+
+Play it here:
+👉 [https://memorrycard.netlify.app](https://memorrycard.netlify.app)
+
+---
+
+## 🧠 Objective
+
+Click **all unique guns** in the set exactly once.
+Make it to the highest possible score — ideally the total number of guns — without repeating.
+
+---
+
+## 🛠 Tech Stack
+
+* **Framework**: React 
+* **Language**: JavaScript (ES6+)
+* **Styling**: CSS Modules or styled-components
+* **Hosting**: [Netlify](https://www.netlify.com)
+
+---
+
+## 📦 Installation (for local development)
+
+```bash
+git clone <repository-url>
+cd memorry
+npm install
+npm start
+```
+
+---
+
+
+## ✨ Features
+
+* 🎯 Memory-based gameplay with increasing difficulty
+* 🔀 Shuffles after each click
+* 💥 Instant reset on wrong click
+* 📊 Real-time score tracking
+* 📱 Fully responsive design
+
+---
